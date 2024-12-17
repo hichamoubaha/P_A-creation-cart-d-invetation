@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartes d'Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Createur de Cartes d'Invitation</h1>
+        <div id="card-container">
+            <div id="card">
+                <!-- La carte ici -->
+            </div>
+        </div>
+        <div id="controls">
+            <button onclick="addText()">Ajouter du texte</button>
+            <button onclick="addImage()">Ajouter une image</button>
+            <hr>
+            <label for="bg-color">Couleur de fond:</label>
+            <input type="color" id="bg-color" onchange="changeBackgroundColor()">
+            <label for="text-color">Couleur du texte:</label>
+            <input type="color" id="text-color" onchange="changeTextColor()">
+            <hr>
+            <label for="text-size">Taille du texte:</label>
+            <input type="number" id="text-size" value="16" onchange="changeTextSize()">
+            <label for="image-size">Taille de l'image:</label>
+            <input type="number" id="image-size" value="100" onchange="changeImageSize()">
+            <hr>
+            <button onclick="saveCard()">Sauvegarder</button>
+            <button onclick="downloadCard()">Télécharger</button>
+        </div>                               
+    <script src="script.js"></script>
+</body>
+</html>
